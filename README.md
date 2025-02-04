@@ -30,3 +30,5 @@ ffmpeg -i bad_apple.mp4 -i palette.png -filter_complex 'scale=-1:200:sws_flags=n
 - Find the location of the RAID in the filesystem (e.g. `/mnt/3fa`) and modify lines 34 and 76 in `video.lua` to use that location.
 - Finally, run `play` in the home directory and enjoy!
 
+A demo of *Bad Apple!!* using the code in this repository can be found on youtube here: [Bad Apple!! on OpenComputers with Computronics](https://www.youtube.com/watch?v=1blsM6J-vic)
+
