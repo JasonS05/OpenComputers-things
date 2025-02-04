@@ -1,0 +1,150 @@
+BPM 138
+TimeScale 2 ; for easier notation since this song is mostly eighth notes
+
+; bars 1-8
+; | (A !<< B <<< C) !<< | A !<< B <<<< --> AAA B AAA C AAA B AAA C AAA B AAA C AAA B AAAA
+
+intro1 = (| (| 0.25D#1 & 0.25D#2 & 2Z !<< (| 0.25D#1 & 0.25D#2 & 0.5Z !<<<) <<< (| 0.25D#1 & 0.25D#2 & Z !<)) !<<
+          | 0.25D#1 & 0.25D#2 & 2Z !<< (| 0.25D#1 & 0.25D#2 & 0.5Z !<<<) <<<<)
+
+intro1
+
+; bars 9-16
+; | (| A !<< B <<<) ! C < D --> AAA B AAA C AAA B AAA D
+
+intro2 = (| (| 0.5D#1 & D#2 0.25Z 0.5D#2 0.25D#3 0.5D#1 0.5D#3 0.5C#3 0.5D#3 !<<
+               0.5D#1 & D#2 0.5D#3 0.25F#3 0.25Z 0.5F#1 & G#2 0.5F#3 0.5G#3 <<<) !
+            0.5G#1 & G#2 0.5F#3 0.5G#3 0.5F#1 & F#2 0.5D#3 0.5F#3 <
+            0.667G#1 & 0.667G#2 0.666F#3 0.667G#3
+            0.667F#1 & 0.667F#2 0.666D#3 0.667F#3)
+
+intro2
+
+; bass for bars 17-24
+; | (| A !<< B | C !< D E) !< --> AAA B CC D E AAA B CC D E
+
+bass1 = (| (| 0.5D#1 0.5Z 0.25D#1 0.25Z 0.25D#2 0.75Z 0.5D#1 D#2 !<< D#1 0.5C#2 0.5D#2 F#1 0.5F#2 0.5G#2
+            | B1 0.5Z 0.5B2 0.5Z 0.5B1 B2 !< C#2 0.5Z 0.5C#3 0.5Z 0.5C#2 C#3 D1 D2 D1 D2) !<)
+
+bass1 &
+
+; melody for bars 17-24
+; | (| A ! B <) ! C < D --> A B A C A B A D
+
+melody1 = (| (| D#4 F4 F#4 G#4 2A#4 ! D#5 C#5 2A#4 2D#4 A#4 G#4 F#4 F4 <) !
+             G#4 F#4 F4 D#4 F4 F#4 F4 D#4 D4 F4 < G#4 F#4 F4 Z F#4 Z G#4 Z 2A#4)
+
+melody1
+
+; bass for bars 25-32
+; | (| A !<<< | B !< C D) !< --> AAAA BB C D AAAA BB C D
+
+bass2_1 = (| 0.5D#1 & 0.5D#2 Z 0.5D#3 0.5Z 0.5D#2 0.5D#3 0.5Z !<<< | 0.5B0 & 0.5B1 Z 0.5B2 0.5Z 0.5B1 0.5B2 0.5Z !<)
+bass2_2 = (0.5C#1 & 0.5C#2 Z 0.5C#3 0.5Z 0.5C#2 0.5C#3 0.5Z 0.5D1 & 0.5D2 Z 0.5D3 0.5Z 0.5D2 0.5D3 0.5Z)
+
+(| bass2_1 bass2_2 !<) &
+
+; melody for bars 25-32
+; | (| A ! B <) ! C < D --> A B A C A B A D
+melody2 = (| (| D#5 F5 F#5 G#5 2A#5 ! D#6 C#6 2A#5 2D#5 A#5 G#5 F#5 F5 <) !
+             G#5 F#5 F5 D#5 F5 F#5 F5 D#5 D5 F5 < (G#4 F#4 F4 Z F#4 Z G#4 Z 2A#4) & G#5 F#5 F5 Z F#5 Z G#5 Z 2A#5)
+
+D#4 & melody2
+
+; bass for bars 33-48
+bass3_1 = (0.5B1 0.5Z 0.5B1 0.5F#2 0.25B2 0.25Z 0.5B2 0.5F#3 0.5B3 0.5Z 0.5B3 F#3 0.5B2 0.5Z 0.5F#2 0.5Z
+           0.5C#2 0.5Z 0.5C#2 0.5G#2 0.25C#3 0.25Z 0.5C#3 0.5G#3 0.5C#4 0.5Z 0.5C#4 G#3 0.5C#3 0.5Z 0.5G#2 0.5Z)
+bass3_2 = (0.5D#2 0.5Z 0.5D#2 0.5A#2 0.25D#3 0.25Z 0.5D#3 0.5A#3 0.5D#4 0.5Z 0.5D#4 A#3 0.5D#3 0.5Z 0.5A#2 0.5Z
+           0.5D#2 0.5Z 0.5D#2 0.5A#2 D#3 0.5D#2 0.5Z 0.5C#2 0.5Z 0.5C#2 0.5G#2 C#3 0.5G#2 0.5Z)
+bass3_3 = (0.5D#2 0.5Z 0.5D#2 0.5A#2 0.25D#3 0.25Z 0.5D#3 0.5A#3 0.5D#4 0.5Z 0.5D#4 A#3 0.5D#3 0.5Z 0.5A#2 0.5Z
+           D#2 A#2 D#3 0.5D#2 0.5Z 0.5D#2 D#3 D#2 0.5C#2 0.5C#3 0.5C#2)
+bass3_4A = (0.5D#2 0.5Z 0.5D#2 0.5A#2 0.5D#3 0.5Z 0.5D#3 0.5A#3 0.5Z 0.5A#3 0.5D#3 0.5Z 0.5D#3 0.5Z 0.5A#2 0.5Z
+            0.5D#2 0.5Z 0.5D#2 0.5A#2 D#3 0.5D#2 0.5Z 0.5C#2 0.5Z 0.5C#2 0.5G#2 C#3 0.5G#2 0.5Z)
+bass3_4B = (0.5B0 7.5Z 0.5C#1 7.5Z)
+bass3_5 = (0.5D#1 & 0.5D#2 0.5Z 0.5D#2 0.5A#2 0.25D#3 0.25Z 0.5D#3 0.5A#3 0.5D#4 0.5Z 0.5D#4 A#3 0.5D#3 0.5Z 0.5A#2 0.5Z
+           D#2 A#2 D#3 0.5D#2 0.5Z C#2 G#2 C#3 0.5C#2 0.5Z)
+
+bass3 = (| bass3_1 ! bass3_2 < bass3_3 < bass3_4A bass3_4B & < bass3_5)
+
+bass3 &
+
+; bass for bars 49-56
+bass4 = (| 8B3 8C#4 16D#4 !<)
+
+(128Z bass4) &
+
+; bass for bars 57-64
+bass5 = (| 1.5B2 0.5F#3 B3 !< B2 Z
+         | 1.5C#3 0.5G#3 C#4 !< C#3 Z
+         | (| 1.5D#3 0.5A#3 D#4 !< D#3 Z) !<
+         1.5B2 0.5F#3 B3 0.5B2 0.5Z 0.5B2 0.5F#3 B3 B2 F#3
+         1.5C#3 0.5G#3 C#4 0.5C#3 0.5Z 0.5C#3 0.5G#3 C#4 C#3 G#3
+         1.5D#3 0.5A#3 D#4 0.5D#3 0.5Z 0.5D#3 0.5A#3 D#4 D#3 A#3 D#3
+         3Z G#1 & G#2 Z F#1 & F#2 Z)
+
+(192Z bass5) &
+
+; melody for bars 33-64
+melody3_1A = (C#6 D#6 A#5 G#5 A#5 Z G#5 A#5)
+melody3_2A = (G#5 F#5 F5 C#5 D#5 Z C#5 D#5)
+melody3_3A = (F5 F#5 G#5 A#5 D#5 Z A#5 0.5C#6 0.5Z)
+melody3_1B = (C#6 D#6 A#5 G#5 A#5 Z D#6 F6)
+melody3_2B = (F#6 F6 D#6 C#6 A#5 Z G#5 A#5)
+melody3_3B = (G#5 F#5 F5 C#5 D#5 Z)
+
+melody3 = (| (| melody3_1A !< melody3_2A melody3_3A) !<<
+             melody3_1A melody3_1B melody3_2B melody3_3B)
+
+melody3 A#5 0.5C#6 0.5Z
+melody3 2Z
+
+; bars 65-72
+intro2
+
+; bass for bars 73 - 80
+bass6_1 = (| D#1 0.25Z 0.5D#1 0.25D#2 0.5Z 0.5D#2 0.5C#2 0.5D#2 !<< D#1 0.5D#2 0.5F#2 F#1 0.5F#2 0.5G#2)
+bass6_2 = (| 0.5B0 0.5Z 0.5B0 0.5B1 0.5Z 0.5B1 0.5A#1 0.5B1 !< 0.5C#1 0.5Z 0.5C#1 0.5C#2 0.5Z 0.5C#2 0.5B1 0.5C#2)
+
+(| bass6_1 bass6_2 ! (| 0.5D1 0.5D2 0.5B1 0.5D2 !<) < (| 0.333D1 & 0.333D2 0.334Z 0.333D1 & 0.333D2 0.333Z 0.334D1 & 0.334D2 0.333Z !<)) &
+
+; bass for bars 81-88
+bass7 = (64Z | bass2_1 ! bass2_2 < C#1 & C#2 Z C#1 & C#2 Z D1 & D2 Z D1 & D2 Z)
+
+bass7 &
+
+; melody for bars 73 - 88
+melody1
+melody2
+
+; bass for bars 89-104
+bass3 &
+
+; melody for bars 89-104
+melody3 B5 0.5D6 0.5Z
+
+; bass for bars 105-112
+bass8 = (| 8C4 8D4 16E4 !<)
+
+bass8 &
+
+; bass for bars 113 - 120
+
+bass9 = (| 1.5C3 0.5G3 C4 !< C3 Z
+         | 1.5D3 0.5A3 D4 !< D3 Z
+         |( | 1.5E3 0.5B3 E4 !< E3 Z) !<
+         8C3 8D3 16E3)
+
+(64Z bass9) &
+
+; melody for bars 105-120
+melody4_1A = (D6 E6 B5 A5 B5 Z A5 B5)
+melody4_2A = (A5 G5 F#5 D5 E5 Z D5 E5)
+melody4_3A = (F#5 G5 A5 B5 E5 Z B5 0.5D6 0.5Z)
+melody4_1B = (D6 E6 B5 A5 B5 Z E6 F#6)
+melody4_2B = (G6 F#6 E6 D6 B5 Z A5 B5)
+melody4_3B = (A5 G5 F#5 D5 E5)
+
+melody4 = (| (| melody4_1A !< melody4_2A melody4_3A) !<<
+             melody4_1A melody4_1B melody4_2B melody4_3B)
+
+melody4
